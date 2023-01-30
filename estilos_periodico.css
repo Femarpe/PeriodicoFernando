@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins';
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    border-radius: 3%;
+}
+
+.cuerpo-noticia {
+    font-size: 14px;
+    color: #888;
+}
+
+.contenido-index {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.grid-container-trending {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3em;
+}
+
+header {
+    height: 80px;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 0.5em;
+}
+
+
+
+.barra-navegacion {
+    max-width: 1320px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.barra-busqueda {
+    border: 2px solid lightgray;
+    border-radius: 50px;
+    padding: 1em;
+    width: 60%;
+    height: 20%;
+}
+
+.entrada-barra-busqeda {
+    border-color: transparent;
+    width: auto;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+
+}
+
+.logos {
+    width: 1em;
+    height: auto;
+    border-radius: 40%;
+    padding: 1em;
+}
+
+.icono-busqueda {
+    opacity: 50%;
+    width: 1em;
+    height: auto;
+}
+
+
+
+.menu-burger {
+    padding-top: 0.5em;
+    margin-left: auto;
+}
+
+.imagen-noticia-trending {
+    max-width: 100%;
+    height: auto;
+}
+
+.autor {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 30%;
+}
+
+.nombre-autor {
+    font-weight: bold;
+}
+
+.posicion {
+    color: #888;
+}
+
+.imagen-autor {
+    max-width: 80%;
+    height: auto;
+}
+
+.categoria-noticia {
+    font-weight: bold;
+}
+
+.fecha {
+    color: #888;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    margin-top: 3em;
+}
+
+.articulo-noticia {
+    /*height: 180px;*/
+}
+
+.imagen-noticia {
+    width: 100%;
+    height: auto;
+
+}
+
+.imagen-publicacion-popular {
+    width: 60%;
+    height: auto;
+}
+
+.subscripcion {
+    background-color: #f8f9fa;
+}
+
+.most-popular {
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+.contenido-subscripcion {
+    max-width: 1320px;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+.formulario-subscripcion {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+}
+
+.email {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 1em;
+    border-color: lightgray;
+
+}
+
+.btSubscripcion {
+    background-color: #f79918;
+    border-color: transparent;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    height: 380px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.redes-sociales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 20%;
+    gap: 1em;
+    margin: auto;
+
+}
+
+.logo-redes {
+    width: 60%;
+    height: auto;
+    background-color: #888;
+    border-radius: 40%;
+    padding: 1em;
+
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1032px) {
+
+
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 700px;
+        color: #222;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .imagen-publicacion-popular {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container-trending {
+        display: block;
+        gap: 3em;
+    }
+
+    header {
+        border-bottom: 2px solid lightgray;
+        padding-bottom: 0.5em;
+        height: auto;
+    }
+
+
+
+    .barra-navegacion {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .barra-busqueda:nth-child(1) {
+        order: 3;
+    }
+
+    .barra-busqueda {
+        border: 2px solid lightgray;
+        border-radius: 50px;
+        padding: 1em;
+        width: 90%;
+        height: 20%;
+
+        
+    }
+
+    .titulo-pagina:nth-child(2) {
+        order: 1;
+    }
+
+    .titulo-pagina {
+        
+    }
+
+    .menu:nth-child(3) {
+        order: 2;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+
+        
+    }
+
+    .redes-sociales-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+
+
+    .entrada-barra-busqeda {
+        border-color: transparent;
+        width: 60%;
+    }
+    
+    .logos {
+        width: 1em;
+        height: auto;
+        border-radius: 40%;
+        padding: 1em;
+    }
+
+    .icono-busqueda {
+        opacity: 50%;
+        width: 1em;
+        height: auto;
+    }
+
+    .menu-burger {
+        padding-top: 0.5em;
+        margin-left: auto;
+    }
+
+
+    .redes-sociales {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 20%;
+        gap: 2em;
+        margin: 10%;
+    
+    }
+}
